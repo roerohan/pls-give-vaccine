@@ -95,7 +95,7 @@ $ python src/main.py -h
 To receive calls, visit https://api2.callmebot.com/txt/login.php and authenticate using telegram.
 
 
-usage: src/main.py [-h] [--district district] [--pincode pincode] --telegram telegram [--dose dose]
+usage: main.py [-h] [--district district] [--pincode pincode] --telegram telegram [--dose dose]
 
 Command Line Arguments for Pls Give Vaccine
 
