@@ -29,7 +29,7 @@ class Arguments:
             metavar="dose",
             default=1,
             type=str,
-            help="Dose Number"
+            help="Dose Number (1 or 2)"
         )
 
     def __init__(self) -> None:
