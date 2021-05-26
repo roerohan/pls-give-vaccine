@@ -67,6 +67,7 @@ To get a local copy up and running follow these simple steps.
 1. Clone the Repo
 ```sh
 git clone https://github.com/roerohan/pls-give-vaccine.git
+cd pls-give-vaccine
 ```
 
 
@@ -77,24 +78,24 @@ To start the script, run the following command:
 
 - Using district ID
 ```sh
-python main.py --district <district-id> --telegram <telegram-username> --dose <dose-number>
+python src/main.py --district <district-id> --telegram <telegram-username> --dose <dose-number>
 ```
 
 - Using pincode
 ```sh
-python main.py --pincode <pincode> --telegram <telegram-username> --dose <dose-number>
+python src/main.py --pincode <pincode> --telegram <telegram-username> --dose <dose-number>
 ```
 
 To get a list of possible options, run `-h`.
 
 ```
-$ python main.py -h                                           
+$ python src/main.py -h                                           
 
 
 To receive calls, visit https://api2.callmebot.com/txt/login.php and authenticate using telegram.
 
 
-usage: main.py [-h] [--district district] [--pincode pincode] --telegram telegram [--dose dose]
+usage: src/main.py [-h] [--district district] [--pincode pincode] --telegram telegram [--dose dose]
 
 Command Line Arguments for Pls Give Vaccine
 
