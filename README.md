@@ -3,23 +3,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <!-- <a href="https://github.com/roerohan/Template">
+  <!-- <a href="https://github.com/roerohan/pls-give-vaccine">
     <img src="https://project-logo.png" alt="Logo" width="80">
   </a> -->
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center">Pls Give Vaccine</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    A script to spam yourself with vaccine notifications.
     <br />
-    <a href="https://github.com/roerohan/Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/roerohan/pls-give-vaccine"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/roerohan/Template">View Demo</a>
+    <a href="https://github.com/roerohan/pls-give-vaccine">View Demo</a>
     ·
-    <a href="https://github.com/roerohan/Template/issues">Report Bug</a>
+    <a href="https://github.com/roerohan/pls-give-vaccine/issues">Report Bug</a>
     ·
-    <a href="https://github.com/roerohan/Template/issues">Request Feature</a>
+    <a href="https://github.com/roerohan/pls-give-vaccine/issues">Request Feature</a>
   </p>
 </p>
 
@@ -44,19 +44,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`roerohan`, `repo`
-
+Spam yourself with messages and calls (potentially) upon availability of vaccines (in India).
 
 ### Built With
 
-* []()
-* []()
-* []()
-
+* [Python](https://www.python.org/)
 
 
 <!-- GETTING STARTED -->
@@ -66,38 +58,56 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+- python
 
 ### Installation
  
 1. Clone the Repo
 ```sh
-git clone https://github.com/roerohan/Template.git
+git clone https://github.com/roerohan/pls-give-vaccine.git
 ```
-2. Install NPM packages
-```sh
-npm install
-```
-
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+To start the script, run the following command:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+- Using district ID
+```sh
+python main.py --district <district-id> --telegram <telegram-username> --dose <dose-number>
+```
+
+- Using pincode
+```sh
+python main.py --pincode <pincode> --telegram <telegram-username> --dose <dose-number>
+```
+
+To get a list of possible options, run `-h`.
+
+```sh
+$ python3 main.py -h                                           
 
 
+To receive calls, visit https://api2.callmebot.com/txt/login.php and authenticate using telegram.
+
+
+usage: main.py [-h] [--district district] [--pincode pincode] --telegram telegram [--dose dose]
+
+Command Line Arguments for Pls Give Vaccine
+
+optional arguments:
+  -h, --help           show this help message and exit
+  --district district  District ID
+  --pincode pincode    Pincode
+  --telegram telegram  Telegram username
+  --dose dose          Dose Number
+```
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/roerohan/Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/roerohan/pls-give-vaccine/issues) for a list of proposed features (and known issues).
 
 
 
@@ -124,6 +134,6 @@ Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more informati
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[roerohan-url]: https://roerohan.github.io
-[issues-shield]: https://img.shields.io/github/issues/roerohan/Template.svg?style=flat-square
-[issues-url]: https://github.com/roerohan/Template/issues
+[roerohan-url]: https://roerohan.tech
+[issues-shield]: https://img.shields.io/github/issues/roerohan/pls-give-vaccine.svg?style=flat-square
+[issues-url]: https://github.com/roerohan/pls-give-vaccine/issues
