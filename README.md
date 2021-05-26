@@ -31,7 +31,6 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
@@ -85,8 +84,8 @@ python main.py --pincode <pincode> --telegram <telegram-username> --dose <dose-n
 
 To get a list of possible options, run `-h`.
 
-```sh
-$ python3 main.py -h                                           
+```
+$ python main.py -h                                           
 
 
 To receive calls, visit https://api2.callmebot.com/txt/login.php and authenticate using telegram.
