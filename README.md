@@ -104,7 +104,7 @@ optional arguments:
   --district district  District ID
   --pincode pincode    Pincode
   --telegram telegram  Telegram username
-  --dose dose          Dose Number
+  --dose dose          Dose Number (1 or 2)
 ```
 
 <!-- ROADMAP -->
